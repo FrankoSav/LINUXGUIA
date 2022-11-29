@@ -1,0 +1,4 @@
+https://www.incibe-cert.es/blog/linux-capabilities
+http://www.etl.it.uc3m.es/Linux_Capabilities
+https://respontodo.com/que-es-zsh-y-por-que-deberia-usarlo-en-lugar-de-bash/
+https://hack4u.io/wp-content/uploads/2022/05/Tmux-Cheat-Sheet.pdf
