@@ -58,10 +58,10 @@ echo $?
 #Tambien puedes redirigir errores para no verlos en pantalla, el STDERR es el 2 y con > lo redirigimos.
 whoam 2>/dev/null
 
-#El /dev/null esun recurso, es como un agujero negro sirve para desvanecer lo que quieras.
+#El /dev/null es un recurso que tenemos por defecto, es como un agujero negro podemos redirigir ahi lo que no queremos
 
 #Ocultar el output de un programa.
-cat /etc/hsot &>/dev/null
+cat /etc/hosts &>/dev/null
 
 #Forma rancia de ocultar el output.
 cat /etc/host > /dev/null 2>&1
