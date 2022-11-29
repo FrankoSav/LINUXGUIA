@@ -46,7 +46,3 @@ cd
 
 #Para crear un archivo de texto con el editor nano que viene por defecto
 nano [elnombreyextensionquequeramos]
-
-
-
-
