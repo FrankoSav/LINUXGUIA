@@ -6,4 +6,3 @@ usermod -aG sudo TunombreHacker
 
 #Configuramos nuestra zsh
 chsh -s /bin/zsh tunombrehacker
-
