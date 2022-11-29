@@ -28,9 +28,8 @@ exec 3>&-
 
 #Comprobamos
 cat file
-|||||||||||||||||||||||||||||||||||||||||
 
-#Imaginemos nos creamos un archivo descriptor de archivo 5 con capacidad de lectura y escritura en el archivo data.
+#Ahora imaginemos nos creamos un archivo descriptor de archivo 5 con capacidad de lectura y escritura en el archivo data.
 exec 5<> data
 
 #Por ejemplo podemos crearnos copias entre descriptores de archivos
