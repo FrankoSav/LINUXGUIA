@@ -1,0 +1,78 @@
+#Ruta relativa y Ruta absoluta.
+
+#Saber que usuario eres.
+whoami
+
+#Lo mismo pero en ruta absoluta.
+/usr/bin/whoami
+
+#Cada binario tiene una ruta absoluta la podemos ver con.
+which
+
+#En caso de que which no exista podemos usar.
+command -v
+
+#Printear en pantalla el contenido de un archivo.
+cat
+
+#Mostrar grupos se hace cateando y nombrandole el directorio.
+cat /etc/group
+
+#Que se muestre algo por pantalla.
+echo
+
+#Algunas variables para ver su contenido necesita poner delante un $ por ej con la variable PATHs
+echo $PATH
+
+#Listar los grupos en los que se incluye el usuario actual (muestra nombre del grupo y un numero que es el identificador)
+id
+
+#De esta forma listamos los grupos con un bin cat el cual no recomiendo ya que es mas dificil de encontrar lo que buscamos.
+/bin/cat /etc/group
+
+#Grepeamos para filtrar por una palabra en especial
+/bin/cat /etc/group | grep "floppy"
+
+#Este grep tiene el parametro -n el cual se puede utilizar para filtrar y ver en que linea esta la palabra a grepear.
+/bin/cat /etc/group | grep "floppy" -n
+
+#Hay diferentes tipos de shells yo recomiendo usar la zsh.
+
+#Los tipos de shells se ven desde esta ruta.
+cat /etc/shells
+
+#Concatenar comandos se hace con punto y coma. ;
+whoami; ls 
+
+#Con el aspersan o tambien llamado ant (&&) hacemos lo mismo pero solo se ejecutara el segundo comando si el primero es exitoso.
+whoami && ls
+
+#Si en vez de usar ANT usamos OR (||) aunque el primer comando de error el segundo puede ser exitoso.
+whoam || ls
+
+#Para ver el codigo de estado de un comando.
+echo $?
+
+#Si vemos que da 0 es que el comando anteriormente introducido es exitoso si da mas quiere decir que NO lo fue.
+
+#Tambien puedes redirigir errores para no verlos en pantalla, el STDERR es el 2 y con > lo redirigimos.
+whoam 2>/dev/null
+
+#El /dev/null esun recurso, es como un agujero negro sirve para desvanecer lo que quieras.
+
+#Ocultar el output de un programa.
+cat /etc/hsot &>/dev/null
+
+#Forma rancia de ocultar el output.
+cat /etc/host > /dev/null 2>&1
+
+#Forma mas comoda. de esta forma tanto el STDOUT y STDEER no molestara.
+cat /etc/host &>/dev/null
+
+#Para abrir solo el proceso hijo que quieras y no moleste el output.
+wireshark &>/dev/null
+
+#Cada proceso tiene su PID (Numero de identificacion del proceso unico)
+
+#Si quieres hacer lo mismo pero sin que dependa de el proceso principal (terminal) y puedas cerrarlo hacemos la prueba con wireshark.
+wireshark &>/dev/null & disown

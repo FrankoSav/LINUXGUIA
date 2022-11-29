@@ -1,0 +1,9 @@
+#Vamos a crear nuestro perfil.
+adduser tunombrehacker
+
+#Vamos a darle permisos para usar el comando sudo de administrador al usuario que creamos con nuestro nombre.
+usermod -aG sudo TunombreHacker
+
+#Configuramos nuestra zsh
+chsh -s /bin/zsh tunombrehacker
+

@@ -1,0 +1,52 @@
+!Comandos basicos de linux bienvenido!
+Fuente: https://ciberninjas.com/chuleta-comandos-linux/
+https://hack4u.io/wp-content/uploads/2022/05/bash-redirections-cheat-sheet.pdf
+
+Muchas gracias por leer esta guia by: FrankoSavage
+
+wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+
+#Comandos basicos para moverte dentro de los directorios:
+
+#Crear carpeta (directorio)
+mkdir nombredirectorio
+
+#Para moverte a esa carpeta.
+cd directorio
+
+#Para eliminar esa carpeta.
+rm -r directorio
+
+#Para eliminar todos los archivos terminados igual .sh .py etc
+rm *.odt
+
+#Eliminar todos los archivos de una carpeta determinada
+rm -r Archivos/*
+
+#Eliminar mas de un archivo a la vez es tan facil como poner rm y los nombres a su lado
+rm eliminame1.odt eliminame2.odt
+
+#Para listar el contenido del directorio.
+ls
+
+#Listar permisos avanzados de cada directorio.
+ls -l
+
+#Para listar no hace falta que sea el directorio que estamos ubicados podemos listar otros con ls y especificar la ruta.
+ls /bin/
+
+#Para ver en que ruta nos encontramos situados.
+pwd
+
+#Si estas en un directorio y quieres ir hacia atras puedes usar tantas veces como necesites.
+../
+
+#Tambien en parrot se puede hacer con
+cd ..
+
+#Para crear un archivo de texto en formato nano.
+nano (y el nombre necesario)
+
+
+
+

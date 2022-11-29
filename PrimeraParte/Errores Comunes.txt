@@ -1,0 +1,7 @@
+#Error Initramsf este error se da por dejar varios procesos abiertos solucion:
+fsck -c -y /dev/sda1
+exit
+
+sudo apt remove realtek-rtl8188eus-dkms
+
+
