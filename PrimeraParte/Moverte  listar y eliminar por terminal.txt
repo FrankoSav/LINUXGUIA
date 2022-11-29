@@ -1,29 +1,28 @@
-!Comandos basicos de linux bienvenido!
 Fuente: https://ciberninjas.com/chuleta-comandos-linux/
 https://hack4u.io/wp-content/uploads/2022/05/bash-redirections-cheat-sheet.pdf
 
-Muchas gracias por leer esta guia by: FrankoSavage
-
-wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
-
+#Aclarar que donde utilizo corchetes es porque va tu informacion personalizada los corchetes no van en ninguno de los comandos
 #Comandos basicos para moverte dentro de los directorios:
 
 #Crear carpeta (directorio)
-mkdir nombredirectorio
+mkdir [nombredirectorio]
 
 #Para moverte a esa carpeta.
-cd directorio
+cd [directorio]
 
 #Para eliminar esa carpeta.
-rm -r directorio
+rm -r [directorio]
 
 #Para eliminar todos los archivos terminados igual .sh .py etc
 rm *.odt
 
-#Eliminar todos los archivos de una carpeta determinada
-rm -r Archivos/*
+#Si usamos asterisco al empezar y terminar una palabra clave borraremos todos los archivos qe contenga esa palabra en su titulo
+rm -r *Borrar-eliminar*
 
-#Eliminar mas de un archivo a la vez es tan facil como poner rm y los nombres a su lado
+#Eliminar todos los archivos de una carpeta determinada nos situamos en ella y aplicamos
+rm -r *
+
+#Para eliminar varios a la vez sin necesidad de que se llamen parecido usamos rm y espacios
 rm eliminame1.odt eliminame2.odt
 
 #Para listar el contenido del directorio.
@@ -40,12 +39,13 @@ pwd
 
 #Si estas en un directorio y quieres ir hacia atras puedes usar tantas veces como necesites.
 ../
-
-#Tambien en parrot se puede hacer con
 cd ..
 
-#Para crear un archivo de texto en formato nano.
-nano (y el nombre necesario)
+#Para volver al directorio home de tu usuario usamos
+cd
+
+#Para crear un archivo de texto con el editor nano que viene por defecto
+nano [elnombreyextensionquequeramos]
 
 
 
