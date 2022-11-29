@@ -1,0 +1,25 @@
+#Permisos SUID y SGID. 
+ 
+#Vamos a practicar, abrimos un binario en este caso python 3.9
+#Primero sacamos su ruta relativa
+which python3.9
+
+
+#como en este caso es 775 el chmod del binario python lo asignamos con un 4 para hacerlo SUID
+chmod 4775
+
+#O mas comodo
+chmod u+s
+
+#Esta es una forma rapida de encontrar binarios que sean SUID.
+find / -type f -perm -4000 2>/dev/null
+
+ls -l /usr/bin/python3.9
+
+import os
+
+#Y puedes cambiar tu identificador de usuario
+os.setuid(0)
+
+os. system(""whoami")
+

@@ -1,0 +1,19 @@
+Fuente: https://blog.alcancelibre.org/staticpages/index.php/permisos-sistema-de-archivos
+	http://mural.uv.es/oshuso/8339_permisos_y_atributos.html
+	https://blog.carreralinux.com.ar/2016/10/sticky-bit-permiso-especial/#:~:text=En%20un%20sistema%20Linux%20pueden,usuarios%20en%20un%20servidor%20FTP).
+	https://www.fpgenred.es/GNU-Linux/el_bit_sticky.html
+	https://programmerclick.com/article/5604675172/
+	https://rm-rf.es/chattr-y-lsattr-visualizar-y-modificar-atributos-en-sistemas-de-ficheros-linux/#:~:text=El%20primer%20comando%2C%20lsattr%20permite,chmod%2C%20chown%2Csetfacl…)
+
+#Vamos a practicar copiando un archivo.
+
+cp/etc/hosts prueba
+
+#Acabamos de crear una copia del directorio etc host la cual podemos manipular pero tranquilo sin alterar el fichero original.
+
+chattr +i +e +v
+
+#Asi estamos agregando los atributos al directorio +i para hacerlo inmutable y nadie pueda alterarlo ni borrar
++e para
+y +V para hacerlo en modo vervose y que la consola nos valla mostrando el progreso en pantalla y ir adelantando trabajo
+
