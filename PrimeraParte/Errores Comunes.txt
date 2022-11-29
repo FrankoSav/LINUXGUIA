@@ -1,7 +1,7 @@
-#Error Initramsf este error se da por dejar varios procesos abiertos solucion:
+#Dos errores y sus soluciones
+
+#Error Initramsf este error se da por dejar varios procesos abiertos en nuestra maquina virtual
 fsck -c -y /dev/sda1
-exit
 
+#Error parrot deprecated dkms
 sudo apt remove realtek-rtl8188eus-dkms
-
-
