@@ -1,5 +1,3 @@
-#Ruta relativa y Ruta absoluta.
-
 #Saber que usuario eres.
 whoami
 
